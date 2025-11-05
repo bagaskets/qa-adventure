@@ -1,0 +1,68 @@
+Test Case: Login with valid credentials
+Preconditions: User account exists
+Steps:
+1. Go to login page
+2. Enter valid email
+3. Enter valid password
+4. Click Login button
+Expected Result:
+- User is redirected to dashboard
+- No error messages displayed
+
+Test Case: Login with invalid credentials
+Preconditions: User account exists
+Steps:
+1. Go to login page
+2. Enter valid email
+3. Enter invalid password
+4. Click Login button
+Expected Result:
+- Error messages displayed "Wrong password"
+- User not logged in
+
+Test Case: Create Invoice
+Preconditions: Logged in and passed onboarding steps
+Steps:
+1. Click create invoice button
+2. Fill recipient name and email
+3. Click Next button
+4. Enter invoice details (items, price, qty)
+5. Click Next button
+6. Choose or add new payment method
+7. Enter payment terms including invoice number and due date
+8. Click Next button
+9. Enter or reconfirm the recipients and cc + Message
+10. Click send button
+Expected Result:
+- Invoice sent through email
+- Invoice appears in invoice list
+- Success message displayed
+
+Test Case: Edit Invoice
+Preconditions: Invoice created (without sending) and saved to draft
+Steps:
+1. Click on an invoice to edit
+2. Modify recipient Name and email
+3. Click Next button
+4. Modify invoice details
+5. Click Next button
+6. Choose or add new payment method
+7. Modify payment terms including invoice number and due date
+8. Click Next button
+9. Enter or reconfirm the recipients and cc + Message
+10. Click save draft
+Expected Result:
+- Invoice updated successfully
+- Changes reflected in invoice list
+- Success message displayed
+
+Test Case: Delete Invoice (Void)
+Preconditions: Logged in and invoice exists on unpaid tab
+Steps:
+1. Click on an invoice to edit
+2. Select status to Void
+3. Fill the memo
+4. Click Void button
+Expected Result :
+- Invoice moved from Unpaid tab to Void tab
+- Success message shown
