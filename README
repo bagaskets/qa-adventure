@@ -1,0 +1,3 @@
+Target Application: acctual.com
+Scope: Login + Create Invoice + Edit Invoice + Delete Invoice
+Tools: Python, Playwright or Selenium, Pytest, Github Actions
